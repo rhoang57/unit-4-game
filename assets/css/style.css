@@ -32,7 +32,7 @@ body {
 }
 
 li {
-    color: #ffffff;
+    color: #000000;
     font-size: .8em;
 }
 
@@ -69,4 +69,11 @@ li {
     font-family: 'Fredericka the Great', cursive;
     color: blue;
     font-size: 1.5em;
+}
+
+
+
+.card-body {
+    align-items: center;
+    padding: 1rem;
 }
