@@ -8,9 +8,13 @@ body {
     margin: auto;
 }
 
+#nigiri-box {
+    margin-top: 2%;
+}
+
 .nigiri {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 }
 
 .row {
@@ -29,7 +33,7 @@ body {
 
 li {
     color: #ffffff;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 #rules {
@@ -38,10 +42,12 @@ li {
 
 .green-text {
     color: green;
+    font-size: 2em;
 }
 
 .red-text {
     color: red;
+    font-size: 2em;
 }
 
 #page-title {
@@ -51,4 +57,16 @@ li {
 #sub {
     font-family: 'Fredericka the Great', cursive;
     color: yellow;
+}
+
+#calories-allowed {
+    font-family: 'Fredericka the Great', cursive;
+    color:  red;
+    font-size: 1.5em;
+}
+
+#calories-eaten {
+    font-family: 'Fredericka the Great', cursive;
+    color: blue;
+    font-size: 1.5em;
 }

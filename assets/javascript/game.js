@@ -32,9 +32,27 @@ $(document).ready(function() {
         total = 0;
         $("#calories-eaten").text(total);
     }
+    reset();
+
+    //creating a reload function once a user accumulates 10 losses
+    function reload() {
+        random = Math.floor(Math.random()* (102)) + 19;
+        $("#calories-allowed").text(random);
+        GeneratedNumbers = [];
+        sushiRanNumbers();
+        total = 0;
+        $("#calories-eaten").text(total);
+        wins = 0;
+        $("#wins").text("0");
+        losses = 0;
+        $("#losses").text("0");
+        $("#wider-wong").attr("src", "assets/images/sad_ww.jpg");
+    }
+    reload();
 
     //determining what happens when a user wins
     function winner() {
+        $("#wider-wong").attr("src", "assets/images/satisfied_ww.jpg");
         alert("You won!");
         wins++;
         $("#wins").text(wins);
@@ -43,6 +61,7 @@ $(document).ready(function() {
 
     //determining what happens when a user loses
     function loser() {
+        $("#wider-wong").attr("src", "assets/images/sick_ww.jpg");
         alert("You lose!");
         losses++;
         $("#losses").text(losses);
@@ -55,11 +74,14 @@ $(document).ready(function() {
         $("#calories-eaten").text(total);
 
         //if / else-if / else statements on various conditions.
-        if (total == random) {
+        if (total === random) {
             winner();
         }
         else if (total > random) {
             loser();
+        }
+        if (losses === 5) {
+            reload();
         }
     })
 
@@ -68,11 +90,14 @@ $(document).ready(function() {
         $("#calories-eaten").text(total);
         
         //sets win/lose conditions
-        if (total == random) {
+        if (total === random) {
             winner();
         }
         else if (total > random) {
             loser();
+        }
+        if (losses === 5) {
+            reload();
         }
     })
 
@@ -81,11 +106,14 @@ $(document).ready(function() {
         $("#calories-eaten").text(total);
 
         //sets win/lose conditions
-        if (total == random) {
+        if (total === random) {
             winner();
         }
         else if (total > random) {
             loser();
+        }
+        if (losses === 5) {
+            reload();
         }
     })
 
@@ -94,11 +122,14 @@ $(document).ready(function() {
         $("#calories-eaten").text(total);
 
         //sets win/lose conditions"
-        if (total == random) {
+        if (total === random) {
             winner();
         }
         else if (total > random) {
             loser();
+        }
+        if (losses === 5) {
+            reload();
         }
     })
 
