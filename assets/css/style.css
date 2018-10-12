@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+#wider-wong {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.nigiri {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+
+.center {
+    text-align: center;
+}
+
+li {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#rules {
+    background-color: #dd1919;
+}
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+#page-title {
+    font-family: 'Trade Winds', cursive;
+}
+
+#sub {
+    font-family: 'Fredericka the Great', cursive;
+    color: yellow;
+}
